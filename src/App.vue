@@ -30,7 +30,7 @@ const checkVersion = async () => {
 </script>
 
 <template>
-  <h1>Vue Version</h1>
+  <h1>Vue Version 2</h1>
 </template>
 
 <style scoped>
