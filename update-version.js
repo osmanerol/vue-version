@@ -15,7 +15,8 @@ const incrementVersion = version => {
 
 const data = fs.readFileSync(versionFile, 'utf8')
 const json = JSON.parse(data)
-const oldVersion = json.version
-const newVersion = incrementVersion(oldVersion)
+//const oldVersion = json.version
+//const newVersion = incrementVersion(oldVersion)
+const newVersion = new Date().getTime()
 json.version = newVersion
 fs.writeFileSync(versionFile, JSON.stringify(json, null, 2))
