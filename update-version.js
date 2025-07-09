@@ -5,7 +5,7 @@ import { fileURLToPath } from 'url'
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
-const versionFile = path.join(__dirname, 'version.json')
+const versionFile = path.join(__dirname, '/public/version.json')
 
 const incrementVersion = version => {
   const parts = version.split('.')
